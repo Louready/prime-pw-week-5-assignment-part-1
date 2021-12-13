@@ -48,6 +48,19 @@ console.log (me.favThreeFoods[2]);
 //  me.shoeCount.push(item);
 //  return true;
 //}
+function updateShoeCount() {
+   me.shoeCount += 1; // or do shoeCount++;
+}
+updateShoeCount(); // no arguments! because three lines above, the function doesnt WANT/NEED arguments.
+console.log(me.shoeCount); // will print 11!
+updateShoeCount();
+console.log(me.shoeCount); // will print 12!
+for (let i=0; i<5; i++) {
+   updateShoeCount();
+}
+console.log(me.shoeCount); // will print... 17! because we ran the function 5 times in the loop
+
+
 
 //console.log ( addItem(1));
 
